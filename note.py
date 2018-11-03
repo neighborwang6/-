@@ -41,19 +41,22 @@ for i in range(n):
   result+=i
 #不要使用制表符（tab）进行缩进，千万不要混用tab与空格，应使用4个空格进行缩进
 
-class book_shelf:
+class book_shelf:    #类的命名应该为驼峰风格且首字母应该大写，这里应该是BookShelf
   pass
 
-bookShelf=BookShelf()
+bookShelf=BookShelf()    #变量名应该是下划线风格，这里应该是bool_shelf
 
 
-f=open('output.txt','w')
+f=open('output.txt','w')    #使用文件时候应注意显示地调用close(),或使用with
+                            #with open('output.txt','w')as if:
+                            #pass
 
-if n>5:print(n)
+if n>5:print(n)    #每一行只写一条语句，该换行就换行，一定不要吝啬换行
   else:n=6
 
-
-                        
+#import语句应该遵循的原则：
+#import次序：先import Python 内置模块，在import第三方模块，最后import自己开发项目中的其他模块；这几种模块中用空行分割开来。
+#一条import语句import一个模块。
                         
                                  
                                  
