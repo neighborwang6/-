@@ -65,7 +65,18 @@ from module import(obg1,obj2,obj3,obj4,obj5,obj6)
 #Python的列表推导简洁方便，但仅应在简单的情况下使用
 [s['name']for s in students if s['age']>18]#正确
 [(x,y)for x in range(m)for y in range(n) if x**2+y**2>=4]#错误
+#Python的条件表达式是if语句的简短语法规则，但同样仅应在简单的情况下使用
+return s['name']if s['age']>18 else s['nickname']#正确
+return s['name']if s['age']>18 else s['nickname']if s['age']>14 else 'anonymous'#错误
+#Python还有一些很“酷”的特性，但奇淫技巧的代码会难以开发调试维护
 
+"""
+请参考Google Python Style Guide: 
+http://google.github.io/styleguide/pyguide.html
+以及Python之禅道（The Zen of Python）
+打开Python交互式解释器并输入import this即可查看
+"""
+inport this
 
 
 
