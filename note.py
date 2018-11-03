@@ -94,7 +94,16 @@ Python 的模块化设计主要包括函数，类，模块，包四种类型
 #逻辑模块
 #⏲模块
 
-                                 
+#python程序的异常处理
+try:
+  do_something()
+except KeyboardInterrupt:
+  exit (0)
+except IOError as e:
+  print("IO failed:",e)
+  
+  
+#Ctrl+C的方式终止程序
                                  
                                  
                                  
