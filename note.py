@@ -2,9 +2,11 @@
 # -
 Python的学习笔记
 
+"""
 2.1编程的过程和规范
 例：一个python的代码片段
-  def main()
+"""
+def main()
   """
       主函数，返回0表示成功
   """
@@ -104,7 +106,47 @@ except IOError as e:
   
   
 #Ctrl+C的方式终止程序
-                                 
-                                 
-                                 
-                                 
+
+""" Python代码分析工具 """
+#Pylint功能：检查代码是否符合PEP8规范，检查代码中是否存在常见的错误和违反最佳实践http://pylint-messages.wikidoc.com.all-messages检查重复的代码
+#Pylint的安装与使用
+#Pylint安装：pip install-U pylint #安装最新版的Pylint#
+#Pylint使用：pylint[options]module_or_package_or_file#对模块/包/文件运行pylin
+                   #options:
+                          #--rcfile=<file>指定检查的配置文件
+                          #--ignore=<file>不进行检查的文件列表
+                          #--disable=<msg ids>关闭某种类型的检查
+                          #-f  <format>报告类型，如html
+""" 
+例：凯撒密码的加密和解密
+"""
+#coding=utf-8
+
+import string
+
+shift=3
+choice = input("would you like to encode or decode?")
+word = (input("Please enter text"))
+letters = string.ascii_letters+string.punctuation+string.digits
+encoded ="
+if choice =="encode":
+  for letter in world:
+    if letter=='':
+      encoded=encoded+''
+    else:
+      x=letters.index(letter)+shift
+      encoded+encoded+letters[x]
+if choice=="decode":
+  for letter in word:
+    if letter=='':
+      encoded=edcoded+''
+    else:
+      x=letters.index(letter)-shift
+      encoded=encoded+letters[x]
+      
+print(encoded)
+
+
+
+
+
