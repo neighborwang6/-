@@ -76,9 +76,12 @@ http://google.github.io/styleguide/pyguide.html
 以及Python之禅道（The Zen of Python）
 打开Python交互式解释器并输入import this即可查看
 """
-inport this
+import this
 
-
+"""  2.2良好的编程习惯  """
+#看：阅读优秀的代码，学习别人的代码
+#问：http://github.com/seajs/seajs/issues/545
+#练：亲自动手写代码，实践，实践，再实践。
 
 
 
