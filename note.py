@@ -57,7 +57,23 @@ if n>5:print(n)    #每一行只写一条语句，该换行就换行，一定不
 #import语句应该遵循的原则：
 #import次序：先import Python 内置模块，在import第三方模块，最后import自己开发项目中的其他模块；这几种模块中用空行分割开来。
 #一条import语句import一个模块。
-                        
+#当从模块中import多个对象且超过一行时（一般建议一行不超过80个字符），使用如下断行法（py2.5以上版本）：
+from module import(obg1,obj2,obj3,obj4,obj5,obj6)
+#不要使用from module import* 导入模块的所有内容，除非是import常量定义模块或其他你确保不会出现命名空间冲突的模块。
+
+#Python还有很多灵活的用法，使用时应注意删繁就简。
+#Python的列表推导简洁方便，但仅应在简单的情况下使用
+[s['name']for s in students if s['age']>18]#正确
+[(x,y)for x in range(m)for y in range(n) if x**2+y**2>=4]#错误
+
+
+
+
+
+
+
+
+
                                  
                                  
                                  
