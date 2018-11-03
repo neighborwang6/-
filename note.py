@@ -166,7 +166,55 @@ print(encoded)
 #改进算法，选择合适的数据结构
 #良好的算法对性能起到关键作用，因此性能改进的重要点是对算法改进
 #算法的时间复杂性的排序依次是O(1)->O(lg n)->O(n^2)->O(n^k)->O(k^n)->O(n!)
+#对成员的查找访问等操作，字典（dictionary）要比（list）更快
+#集合（set）的并、交、差的操作比列表（list）的迭代要快
+#循环优化的基本原则：尽量减少循环过程中的计算量，在多重循环的时候，尽量将内层的计算提到上一层。
+#字符串的优化：Python的字符串对象是不可改变的。字符串连接的使用尽量使用join()而不是+。当对字符串可以使用正则表达式或者内置函数处理时，选择内置函数。
+#使用列表解析和生成器表达式：列表解析要比在循环中构建一个新的list更为高效，因此可以利用这一特性来提高程序的效率。
 
+"""
+****************************************2.6结对编程实践****************************************
+"""
 
+#结对编程就是两名程序员在同一台电脑前结对编写解决同一问题的代码。例如领航员和驾驶员、长机和僚机、驾驶和副驾驶。
+    #口渴指数是核实伙伴交流程度的一个考核标准
+    #领航员需要给驾驶员一点时间
+    #主动参与
+    #坚持代码标准、流程规范
+#并不是所有的项目都需要结对编程
+    #最大限度发挥领航的价值
+    #与个人性格有关
+#实例：生命游戏
+    #cell_maprange
+  CELL_DEAD = 0
+  CELL_ALIVE = 1
+  
+  @staticmethod
+  def chenck_integer(n,min=None,max=None):
+    if not isinstance(n,int) or not isinstance(min,int) or not isinstance(max,int):
+      rsise TypeError("Type.Error:int")
+    if min and n < min:
+      raise RangeError("Range error:min")
+    if max and n > max:
+      raise RangeError("Range error:max")
 
+#构造函数     
+def __init__(self,rows,cols):
+    """Inits GameMap with row and column count.
+    Validate all the parameters: integer,range[1,???]
+    """
+    GameMap.check_integer(row,1)
+    GameMap.check_integer(cols,1)
+    self.size = (rows,cols)
+    self.size = (rows,cols)
 
+def get_neighbor_count_map()
+def set_map()
+def print_map()
+  """
+  
+  """
+  
+    
+    
+    
