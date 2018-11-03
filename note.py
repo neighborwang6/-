@@ -33,10 +33,26 @@
             print("打开文件cat.pic时错误")
             return -1
         return 0
-                        
-                        
-                        
-                        
+      
+#Python 编程规范：语句
+print("Hello,world!");    #不要在行尾加分号
+
+for i in range(n):
+  result+=i
+#不要使用制表符（tab）进行缩进，千万不要混用tab与空格，应使用4个空格进行缩进
+
+class book_shelf:
+  pass
+
+bookShelf=BookShelf()
+
+
+f=open('output.txt','w')
+
+if n>5:print(n)
+  else:n=6
+
+
                         
                         
                                  
